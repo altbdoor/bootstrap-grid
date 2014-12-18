@@ -1,0 +1,197 @@
+---
+---
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Bootstrap Grid · altbdoor.github.io</title>
+	
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h1>Bootstrap Grid</h1>
+				<h4>A generator for Bootstrap's Grid System component</h4>
+				
+				<form id="generator-form" class="form-horizontal">
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Border Box</label>
+						<div class="col-sm-9">
+							<div class="alert alert-info small">
+								Depending on your preference, <code>box-sizing: border-box</code> on all elements may or may not make CSS styling easier. You can go further by specifying if you want <code>.container</code> or <code>.container-fluid</code> only. <a href="http://getbootstrap.com/getting-started/#third-box-sizing" class="alert-link" target="_blank">Click here</a> for more information.
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-border-box" class="form-border-box" value="all" checked>
+									All (<code>* {box-sizing: border-box}</code>)
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-border-box" class="form-border-box" value="both">
+									Grid related, both containers (<code>.container, .container-fluid, .row, .col</code>)
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-border-box" class="form-border-box" value="fluid">
+									Grid related, fluid container only (<code>.container-fluid, .row, .col</code>)
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-border-box" class="form-border-box" value="fixed">
+									Grid related, fixed container only (<code>.container, .row, .col</code>)
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Container</label>
+						<div class="col-sm-9">
+							<div class="alert alert-info small">
+								If you are sure that you will only use one of the containers, you can choose to exclude the other. If unsure, it is best to keep both. <a href="http://getbootstrap.com/css/#grid-intro" class="alert-link" target="_blank">Click here</a> for more information.
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-container" class="form-container" value="both" checked>
+									Both containers (<code>.container, .container-fluid</code>)
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-container" class="form-container" value="fluid">
+									Fluid container only (<code>.container-fluid</code>)
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-container" class="form-container" value="fixed">
+									Fixed container only (<code>.container</code>)
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Push and pull</label>
+						<div class="col-sm-9">
+							<div class="alert alert-info small">
+								If you need column ordering on different screen sizes, you can choose to include them. <a href="http://getbootstrap.com/css/#grid-column-ordering" class="alert-link" target="_blank">Click here</a> for more information.
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" id="form-move-xs" checked>
+									Include <code>.col-xs-push, .col-xs-pull</code>
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" id="form-move-sm" checked>
+									Include <code>.col-sm-push, .col-sm-pull</code>
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" id="form-move-md" checked>
+									Include <code>.col-md-push, .col-md-pull</code>
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" id="form-move-lg" checked>
+									Include <code>.col-lg-push, .col-lg-pull</code>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Visibility CSS</label>
+						<div class="col-sm-9">
+							<div class="alert alert-info small">
+								If you need helper classes for visibility on different screen sizes, you can choose to include them. Having <code>!important</code> might lead to undesirable behavior, as it overrides most defined rules. You can choose to include it without <code>!important</code>, but it will be advisable to include this after all other CSS files. <a href="http://getbootstrap.com/css/#responsive-utilities-classes" class="alert-link" target="_blank">Click here</a> for more information.
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-visibility-css" class="form-visibility-css" value="none">
+									Do not include
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-visibility-css" class="form-visibility-css" value="important" checked>
+									Include, with <code>!important</code>
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-visibility-css" class="form-visibility-css" value="not">
+									Include, without <code>!important</code>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">Print CSS</label>
+						<div class="col-sm-9">
+							<div class="alert alert-info small">
+								If you need helper classes for print visibility on different screen sizes, you can choose to include them. Having <code>!important</code> might lead to undesirable behavior, as it overrides most defined rules. You can choose to include it without <code>!important</code>, but it will be advisable to include this after all other CSS files. <a href="http://getbootstrap.com/css/#responsive-utilities-print" class="alert-link" target="_blank">Click here</a> for more information.
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-print-css" class="form-print-css" value="none">
+									Do not include
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-print-css" class="form-print-css" value="important" checked>
+									Include, with <code>!important</code>
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="form-print-css" class="form-print-css" value="not">
+									Include, without <code>!important</code>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-9 col-sm-offset-3">
+							<input type="submit" value="Generate" class="btn btn-primary btn-lg">
+							<input type="reset" value="Reset to Default" class="btn btn-default btn-lg">
+						</div>
+					</div>
+				</form>
+				
+				<h4>Output</h4>
+				<div class="alert alert-info small">
+					The output file is not compressed in any way and may have redundant parts. For production use, consider minifying it with <a href="http://gpbmike.github.io/refresh-sf/" target="_blank" class="alert-link">refresh-sf</a>.
+				</div>
+				<textarea id="output" rows="15" class="form-control"></textarea>
+			</div>
+		</div>
+	</div>
+
+	
+	{% for item in site.data.map %}
+	<script type="text/plain" id="component_{{ item }}">{% include_relative css/{{ item }}.css %}</script>
+	{% endfor %}
+	<script type="text/plain" id="component_license">/*!
+ * Bootstrap v3.x (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */</script>
+	<script type="text/plain" id="component_warning">/*! Recommended to be included after all other CSS files! */</script>
+	
+	<script>var map = {% include_relative _data/map.json %};</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="public/script.js"></script>
+</body>
+</html>

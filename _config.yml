@@ -1,0 +1,10 @@
+# Permalinks
+permalink: pretty
+relative_permalinks: true
+
+# Setup
+title: altbdoor
+paginate: 1
+baseurl: /
+
+# Custom vars
