@@ -1,7 +1,0 @@
-/* grid specific border box */
-.row, .row:after, .row:before,
-.row > div, .row > div:after, .row > div:before {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}

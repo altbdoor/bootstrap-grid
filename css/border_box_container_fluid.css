@@ -1,4 +1,6 @@
 /* grid specific border box, container-fluid only */
+.row, .row:after, .row:before,
+.row > div, .row > div:after, .row > div:before,
 .container-fluid, .container-fluid:after, .container-fluid:before {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;

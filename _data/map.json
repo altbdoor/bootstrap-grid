@@ -11,7 +11,6 @@
 "bootstrap_visible_print_important",
 "bootstrap_visible_print_normal",
 "border_box_all",
-"border_box_grid",
-"border_box_grid_container_fixed",
-"border_box_grid_container_fluid"
+"border_box_container_fixed",
+"border_box_container_fluid"
 ]

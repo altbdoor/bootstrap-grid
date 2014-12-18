@@ -1,4 +1,4 @@
-/* bootstrap grid print visiblity helpers with important */
+/* bootstrap grid print visibility helpers with important */
 .visible-print {
   display: none !important;
 }
