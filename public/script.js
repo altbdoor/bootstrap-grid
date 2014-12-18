@@ -57,6 +57,8 @@
 			appendOutput(components.bootstrap_container_fixed);
 		}
 		
+		appendOutput(components.bootstrap_column);
+		
 		if ($(formMoveXs).is(':checked')) {
 			appendOutput(components.bootstrap_column_xs_move);
 		}
