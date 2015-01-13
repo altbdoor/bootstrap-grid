@@ -5,3 +5,12 @@
   margin-right: auto;
   margin-left: auto;
 }
+.container-fluid:after, .container-fluid:before,
+.row:after,.row:before {
+  content:" ";
+  display:table
+}
+.container-fluid:after,
+.row:after {
+  clear:both
+}
