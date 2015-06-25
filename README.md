@@ -33,4 +33,4 @@ If you need helper classes for print visibility on different screen sizes, you c
 
 Note
 ===
-The output file is not compressed in any way and may have redundant parts. For production use, consider minifying it with [refresh-sf](http://gpbmike.github.io/refresh-sf/). 
+The output file is not compressed in any way and may have redundant parts. For production use, consider minifying it with [refresh-sf](http://gpbmike.github.io/refresh-sf/).
