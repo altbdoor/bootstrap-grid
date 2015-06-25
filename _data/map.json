@@ -6,10 +6,8 @@
 "bootstrap_column_xs_move",
 "bootstrap_container_fixed",
 "bootstrap_container_fluid",
-"bootstrap_visible_important",
-"bootstrap_visible_normal",
-"bootstrap_visible_print_important",
-"bootstrap_visible_print_normal",
+"bootstrap_visible",
+"bootstrap_visible_print",
 "border_box_all",
 "border_box_container_fixed",
 "border_box_container_fluid"
