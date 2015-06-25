@@ -76,20 +76,20 @@
 		if (tempVal == 'none') { }
 		else if (tempVal == 'not') {
 			appendOutput(components.warning);
-			appendOutput(components.bootstrap_visible_normal);
+			appendOutput(components.bootstrap_visible.replace(/ !important/g, ''));
 		}
 		else {
-			appendOutput(components.bootstrap_visible_important);
+			appendOutput(components.bootstrap_visible);
 		}
 		
 		tempVal = radioGetVal(formPrintCss);
 		if (tempVal == 'none') { }
 		else if (tempVal == 'not') {
 			appendOutput(components.warning);
-			appendOutput(components.bootstrap_visible_print_normal);
+			appendOutput(components.bootstrap_visible_print.replace(/ !important/g, ''));
 		}
 		else {
-			appendOutput(components.bootstrap_visible_print_important);
+			appendOutput(components.bootstrap_visible_print);
 		}
 	});
 	
